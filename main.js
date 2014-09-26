@@ -313,6 +313,7 @@ define(function (require, exports, module) {
         projectRoot = directory._path;
 
         // Ensure that at most one file is working when the project opens.
+      /*
         var workingSet = DocumentManager.getWorkingSet();
         if (workingSet.length > 1) {
             DocumentManager.removeListFromWorkingSet(workingSet.slice(1));
@@ -323,6 +324,7 @@ define(function (require, exports, module) {
         DocumentManager.getDocumentForPath(workingSet[0]._path).done(function (document) {
             DocumentManager.setCurrentDocument(document);
         });
+        */
     });
 
     $(DocumentManager).on('currentDocumentChange', function () {
